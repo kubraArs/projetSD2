@@ -3,16 +3,13 @@ import java.util.Objects;
 
 public class Ligne {
     private final String id;
-    private final int numero;
+    private final String numero;
     private final String origine;
     private final String destination;
-    private final LocalTime tempsDAttente;
-    private final Transport transport;
-    enum Transport{
-        METRO,TRAM,BUS
-    }
+    private final int tempsDAttente;
+    private final String transport;
 
-    public Ligne(String id, int numero, String origine, String destination, LocalTime tempsDAttente, Transport transport) {
+    public Ligne(String id, String numero, String origine, String destination,String transport,  int tempsDAttente) {
         this.id = id;
         this.numero = numero;
         this.origine = origine;
@@ -25,7 +22,7 @@ public class Ligne {
         return id;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
@@ -37,11 +34,11 @@ public class Ligne {
         return destination;
     }
 
-    public LocalTime getTempsDAttente() {
+    public int getTempsDAttente() {
         return tempsDAttente;
     }
 
-    public Transport getTransport() {
+    public String getTransport() {
         return transport;
     }
 

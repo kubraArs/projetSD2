@@ -1,5 +1,5 @@
 public class Troncon {
-    private final String ligne;
+    private final Ligne ligne;
 
     private final String depart;
 
@@ -7,7 +7,7 @@ public class Troncon {
 
     private final int duree;
 
-    public Troncon(String ligne, String depart, String arrivee, int duree) {
+    public Troncon(Ligne ligne, String depart, String arrivee, int duree) {
         this.ligne = ligne;
         this.depart = depart;
         this.arrivee = arrivee;
@@ -26,7 +26,7 @@ public class Troncon {
         return depart;
     }
 
-    public String getLigne() {
+    public Ligne getLigne() {
         return ligne;
     }
 
